@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual da Família — Execução Penal (DF) | Dr. Geílton</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>O Estado erra contas e quem paga é a sua família.</h1>
+                <p class="subtitle">Não deixe ele preso um dia a mais do que a lei manda.</p>
+                <p class="description"><strong>Baixe o Manual da Família (Edição DF)</strong>: O guia definitivo para entender a Cobal, evitar itens barrados e antecipar a liberdade.</p>
+                
+                <button class="btn-cta" onclick="openModal()">
+                    BAIXAR MANUAL E TIRAR DÚVIDAS
+                </button>
+                <p class="disclaimer">Material gratuito. Análise jurídica disponível após o download.</p>
+            </div>
+            <div class="hero-image">
+                <div class="img-placeholder">IMAGEM EBOOK + DR. GEÍLTON</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="prova-social">
+        <div class="container">
+            <h2>Quem tem informação, não sofre na fila.</h2>
+            <div class="depoimentos-grid">
+                <div class="card">
+                    <p>"Doutor, graças ao guia consegui entregar a Cobal de 10 dias que eu nem sabia que existia!"</p>
+                    <cite>— Familiar atendida.</cite>
+                </div>
+                <div class="card">
+                    <p>"O cálculo que o senhor fez mostrou 4 meses que o presídio esqueceu. Inacreditável."</p>
+                    <cite>— Familiar do DF.</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dores">
+        <div class="container">
+            <h2>Você vive essa angústia hoje?</h2>
+            <ul class="lista-check">
+                <li>Medo de prejuízo com itens da Cobal barrados.</li>
+                <li>Falta de notícias e burocracia nas visitas.</li>
+                <li>Sensação de que o processo está esquecido.</li>
+                <li>Desinformação sobre a data exata da liberdade.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cta-final">
+        <div class="container">
+            <h2>Baixe agora e receba o kit completo</h2>
+            <button class="btn-cta" onclick="openModal()">QUERO MEU KIT GRATUITO</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© Dr. Geílton — Advocacia Criminal e Execução Penal.</p>
+            <p class="tiny">Conteúdo informativo. Ao enviar o formulário você autoriza o contato.</p>
+        </div>
+    </footer>
+
+    <div id="modal-form" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Baixar Manual + Agendar Contato</h3>
+            
+            <form id="lead-form">
+                <label>Nome completo *</label>
+                <input id="nome" name="nome" type="text" required placeholder="Ex: Maria da Silva">
+
+                <label>WhatsApp (com DDD) *</label>
+                <input id="whatsapp" name="whatsapp" type="tel" required placeholder="Ex: 61 99999-9999">
+
+                <label>Qual o status dele hoje? *</label>
+                <select id="status" name="status" required>
+                    <option value="">Selecione...</option>
+                    <option value="preso_provisorio">Preso Provisório</option>
+                    <option value="ja_condenado">Já Condenado</option>
+                    <option value="nao_sei">Não sei dizer</option>
+                </select>
+
+                <label>Já tem advogado particular? *</label>
+                <select id="advogado" name="advogado" required>
+                    <option value="">Selecione...</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                    <option value="apenas_defensoria">Apenas Defensoria</option>
+                </select>
+
+                <input type="hidden" id="origem" name="origem" value="lp_manual_df">
+
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <small>Autorizo contato via WhatsApp para análise do caso.</small>
+                </label>
+
+                <button type="submit" id="btnSubmit">Receber Manual no WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
