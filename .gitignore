@@ -1,0 +1,64 @@
+# =========================================================
+# .gitignore — llasviegasADV (Michelle Nogueira)
+# Criado em 2026-09-01 ao receber Projeto_Escritorio_Juridico_IA
+# =========================================================
+
+# --- SO Windows ---
+desktop.ini
+Thumbs.db
+ehthumbs.db
+ehthumbs_view.db
+$RECYCLE.BIN/
+
+# --- Python (ha scripts no Projeto_Escritorio_Juridico_IA) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+
+# --- Node (caso algum subprojeto use) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Ambientes / editores ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs e temporarios ---
+*.log
+logs/
+*.tmp
+*.bak
+
+# --- Builds / saidas ---
+dist/
+build/
+*.zip
+*.tar.gz
+*.7z
+
+# --- Segredos (nao commitar mesmo) ---
+.env
+.env.local
+*.pem
+*.key
+
+# Observacao: o Projeto_Escritorio_Juridico_IA mora agora em
+# C:\Projeto_Escritorio_Juridico_IA (repositorio proprio).
+# Este repo (llasviegasADV) so guarda a Landpage e arquivos
+# de configuracao. Regras de Python/Node acima cobrem
+# qualquer ferramenta auxiliar que rode daqui.
